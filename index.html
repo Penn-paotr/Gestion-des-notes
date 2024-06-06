@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion_des_notess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Gestion des notes</h1> 
+        <p> Saisissez la matière, la note la plus élevée,            
+            la moyenne de la classe, ma note</p>
+        <div class="container">            
+            <form id="form" method="post" action="#">         
+                    <select id="matiere">
+                    <option value="">--Choisissez une matière--</option>
+                    <option value="maths">maths</option>
+                    <option value="physique">physique</option>
+                    <option value="chimie">chimie</option>
+                    <option value="français">français</option>
+                    <option value="anglais">anglais</option>
+                    <option value="science">science</option>
+                </select>
+                <input id="classeMax" type="number" placeholder="note la plus élevée" required>
+                <input id="classeMoy" type="number" placeholder="moyenne de la classe" required>
+                <input id="maNote" type="number" placeholder="ma note" required>
+                <div class="btn-container">
+                <button id="submit" type="submit"> Valider</button>
+                <button id="cancel" type="reset">Annuler</button> 
+            </form> 
+        </div>                    
+        <div class="bonus-layout">
+            <span>Quel est mon bonus ?</span>
+            <div class="bonus"></div>
+            <button>Calculer</button>
+        </div>
+        <pre id="result"></pre>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

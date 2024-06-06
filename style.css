@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+pre {
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+form {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+span {
+    font-size: 0.8rem;
+    color: blue;
+}
+
+.bonus-layout {
+    padding: 1.2rem;
+    height: 180px;
+    width:120px;
+    background-color: rgba(176, 198, 198, 0.658);
+    border: solid rgb(67, 62, 99);
+    border-radius: 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-container {
+    gap: 5rem;
+}
+button{
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 6rem;
+}
+
+#submit {
+    background-color: green;
+}
+#submit:hover {
+    background-color: rgb(7, 234, 7);
+}
+
+#cancel {
+    background-color: brown;    
+}
+#cancel:hover {
+    background-color: rgb(236, 58, 58);    
+}
